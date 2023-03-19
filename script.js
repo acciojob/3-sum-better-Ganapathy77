@@ -5,7 +5,7 @@ function threeSum(arr, target) {
 	for(let i=0; i<arr.length; i++){
 		for(let j=0; j<arr.length; j++){
 			for(let k=0; k<arr.length; k++){
-				if(Math.abs(target - closetSum)> Math.abs(arr[i]+arr[j]+arr[k])){
+				if(Math.abs(target - closetSum)> Math.abs(target - (arr[i]+arr[j]+arr[k]))){
 					closetSum = Math.abs(arr[i]+arr[j]+arr[k])
 				}
 			}
